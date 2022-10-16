@@ -1,0 +1,25 @@
+.dropdown
+  font-size: 1.5em
+  background-color: $secondary-color
+  border-radius: 5px
+
+  div:first-child
+    cursor: pointer
+    padding: 10px 25px
+    color: white
+    background-color: $primary-color
+    border-radius: 5px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    i
+      transition-duration: 250ms
+
+    &.opened i
+      transform: rotateZ(-180deg)
+
+  div:last-child
+    display: none
+    padding: 20px
+    font-weight: 400
