@@ -1,21 +1,23 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.svg'
 
 export default () => {
 	return (
 		<div className='navbar'>
-			<Link to='/'>
+			<NavLink to='/'>
 				<h1>
 					<img id='logo' src={logo} alt='' />
 				</h1>
-			</Link>
+			</NavLink>
 			<nav>
 				<ul>
 					<li>
-						<Link to='/'>Accueil</Link>
+						<NavLink to='/' end>
+							Accueil
+						</NavLink>
 					</li>
 					<li>
-						<Link to='/about'>A Propos</Link>
+						<NavLink to='/about'>A Propos</NavLink>
 					</li>
 				</ul>
 			</nav>

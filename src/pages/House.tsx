@@ -25,7 +25,7 @@ export default () => {
 	const houseData: HouseData | undefined = housesData.find((house) => house.id === id)
 
 	if (!houseData) {
-		return <Navigate to='/'></Navigate>
+		return <Navigate to='/404'></Navigate>
 	}
 
 	const stars: Array<ReactNode> = []
